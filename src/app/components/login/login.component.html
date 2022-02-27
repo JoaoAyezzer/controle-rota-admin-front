@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="content mat-elevation-z4">
+    <div class="logo">
+      <img src="../../../assets/LogoLogin.png" alt="logo login">
+    </div>
+    <div class="line"></div>
+    <!--div class="login">
+      <h1>LOGIN</h1>
+      <input type="text" placeholder="email">
+      <input type="password" placeholder="senha">
+      <button class="submit mat-elevation-z4">Login</button>
+     
+    </div-->
+    <div class="login">
+      <mat-form-field appearance="outline">
+        <mat-label>Seu email</mat-label>
+        <input matInput > 
+          <mat-icon mat-icon matSuffix>mail</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline" *ngIf="!senhaEsquecida">
+        <mat-label>Sua senha</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'">
+        <button class="icon" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <button class="submit" mat-raised-button  color = "primary" > {{!senhaEsquecida ? 'ENTRAR' : 'ENVIAR EMAIL'}} </button>
+      <button 
+        *ngIf="senhaEsquecida" 
+        mat-raised-button  
+        color = "warn" 
+        class="voltar"
+        (click)="senhaEsquecida = !senhaEsquecida">
+        Cancelar 
+      </button>
+      <p 
+        *ngIf="!senhaEsquecida"
+        (click)="senhaEsquecida = !senhaEsquecida">
+        Esqueci a senha!
+      </p>
+    </div>
+    
+  </div>
+
+</div>
