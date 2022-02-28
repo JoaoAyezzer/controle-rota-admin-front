@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatInputModule } from '@angular/material';
+import { MatInputModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule} from '@angular/material/sidenav';
@@ -24,9 +24,15 @@ import { DespesasComponent } from './components/despesas/despesas.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
 import { CarrosComponent } from './components/carros/carros.component';
 import { AbastecimentosComponent } from './components/carros/abastecimentos/abastecimentos.component';
-import { ConfiguracoesComponent } from './components/configuracoes/configuracoes.component';
 import { ManutencoesComponent } from './components/carros/manutencoes/manutencoes.component';
-import { LimpesasComponent } from './components/carros/limpesas/limpesas.component';
+import { LimpezasComponent } from './components/carros/limpezas/limpezas.component';
+import { VisitasReadComponent } from './components/visitas/visitas-read/visitas-read.component';
+import { HomeComponent } from './components/home/home.component';
+import { TecnicosComponent } from './components/tecnicos/tecnicos.component';
+import { VisitaFormComponent } from './components/visitas/visita-form/visita-form.component';
+import { VisitaDetalheComponent } from './components/visitas/visita-detalhe/visita-detalhe.component';
+import { TecnicoFormComponent } from './components/tecnicos/tecnico-form/tecnico-form.component';
+import { TecnicoDetalheComponent } from './components/tecnicos/tecnico-detalhe/tecnico-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -41,8 +47,14 @@ import { LimpesasComponent } from './components/carros/limpesas/limpesas.compone
     CarrosComponent,
     AbastecimentosComponent,
     ManutencoesComponent,
-    LimpesasComponent,
-    ConfiguracoesComponent
+    LimpezasComponent,
+    VisitasReadComponent,
+    HomeComponent,
+    TecnicosComponent,
+    VisitaFormComponent,
+    VisitaDetalheComponent,
+    TecnicoFormComponent,
+    TecnicoDetalheComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +69,10 @@ import { LimpesasComponent } from './components/carros/limpesas/limpesas.compone
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
