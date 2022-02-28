@@ -1,0 +1,53 @@
+.header{
+    top: 0;
+    position: sticky;
+    background-color: #004166;
+    padding-left: 15rem;
+    color: #fff;
+}
+mat-icon{
+    margin-right: 0.5em;
+}
+.dados-tecnico{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    position: relative;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: medium;
+    color: #fff;
+    font-weight: 120;
+    margin-bottom: 1.3rem;
+    
+}
+h5{
+    position: absolute;
+    display: flex;
+    font-size: small;
+    color: #fff;
+    font-weight: 120;
+    margin-top: 1.2rem;
+    margin-bottom: 2em;
+
+}
+.header button{
+    margin-left: 50vw;
+    display: flex;
+    justify-content: end;
+    font-weight: 120;
+    height: 2rem;
+    align-items: center;
+    color: #004166;
+}
+.header button:hover{
+   background-color: #ffb703;
+   color: #fff;
+}
+.icon-button{
+    padding: 0;
+    margin: 0;
+    margin-left: 0.5rem;
+}

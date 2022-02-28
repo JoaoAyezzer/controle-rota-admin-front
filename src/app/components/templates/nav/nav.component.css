@@ -1,0 +1,48 @@
+.sidenav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.logo{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    justify-content: center;
+}
+a{
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    color: #004166;
+}
+.sidenav a:hover {
+    background-color: #29A5D6;
+    color: #fff;
+}
+ mat-icon:hover{
+    color: #fff;
+}
+
+mat-icon{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+button{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 80%;
+    background-color: #2ECC71;
+    color: #fff;
+}
+button:hover{
+    background-color: #4be965;
+}
+
+.icon-button{
+    color: #fff;
+    justify-content: start;
+    margin: 0;
+}

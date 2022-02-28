@@ -1,0 +1,48 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav class="sidenav mat-elevation-z4" mode="side" opened fixedInViewport="true">
+    <img class="logo" src=".../../../../../../assets/logoHome.png" alt="">
+    <button class="submit" mat-raised-button >
+      <mat-icon class="icon-button">add</mat-icon> Agendar visita </button>
+    <mat-nav-list class="nav-lis">
+      <a mat-list-item routerLink="/">
+          <mat-icon>home</mat-icon>
+          Inicio
+      </a>
+      <a mat-list-item routerLink="/products"[queryParams]="{pagina:1}">
+          <mat-icon>people</mat-icon>
+          Tecnicos
+      </a>
+      <a mat-list-item routerLink="/config"> 
+          <mat-icon>inventory_back</mat-icon>
+          Visita
+      </a>
+      <a mat-list-item routerLink="/config"> 
+        <mat-icon>savings_back</mat-icon>
+          Despesas
+        </a>
+        <a mat-list-item routerLink="/config"> 
+           <mat-icon>drive_eta_back</mat-icon> 
+          Carros
+        </a>
+        <a mat-list-item routerLink="/config"> 
+          <mat-icon>local_gas_station_back</mat-icon>
+          Abastecimentos
+        </a>
+        <a mat-list-item routerLink="/config"> 
+          <mat-icon>engineering_black</mat-icon>
+          Manutenções
+        </a>
+        <a mat-list-item routerLink="/config"> 
+          <mat-icon>clean_hands_black</mat-icon>
+          Limpezas
+        </a>
+        <a mat-list-item routerLink="/config"> 
+          <mat-icon>settings</mat-icon>
+          Configuração
+        </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+      <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
